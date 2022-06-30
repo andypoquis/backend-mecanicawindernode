@@ -13,16 +13,19 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
     },
     "stock": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "price": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     },
     "image": {
       "type": "media",
@@ -34,6 +37,12 @@
         "videos",
         "audios"
       ]
+    },
+    "client_products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::client-product.client-product",
+      "inversedBy": "products"
     }
   }
 }

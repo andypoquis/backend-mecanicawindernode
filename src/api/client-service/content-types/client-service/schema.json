@@ -23,7 +23,18 @@
       "target": "plugin::users-permissions.user"
     },
     "state": {
-      "type": "integer"
+      "type": "integer",
+      "max": 3,
+      "min": 0,
+      "default": 0
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "service": {
       "type": "relation",
