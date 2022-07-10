@@ -13,6 +13,7 @@
     "@strapi/plugin-documentation": "4.1.10",
     "@strapi/plugin-i18n": "4.1.10",
     "@strapi/plugin-users-permissions": "4.1.10",
+    "@strapi/provider-email-sendgrid": "^4.2.2",
     "@strapi/strapi": "4.1.10",
     "pg": "8.6.0",
     "pm2": "^5.2.0"
